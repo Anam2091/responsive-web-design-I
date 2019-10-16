@@ -359,9 +359,32 @@ content: "• ";
         display: flex;
     justify-content: center;
     }
-
+    .text-lefty, .text-righty{
+        width:40%;
+    }
     
    
+}
+@media (max-width: 500px){
+    nav{
+        flex-direction: column;
+        text-align: center;
+     }
+     .text-container{
+         flex-direction: column;
+     }
+     .text-lefty, .text-righty{
+         width:100%;
+     }
+     .parent-right{
+         display:flex;
+         flex-direction: column;
+    }
+    .lefty-again, .righty-again, .last-one{
+        width:100%;
+        margin-bottom:20px;
+    }
+
 }
   
   
